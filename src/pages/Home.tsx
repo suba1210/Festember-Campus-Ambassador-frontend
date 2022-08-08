@@ -1,7 +1,14 @@
 import React from 'react';
-
-import Header from '../components/Home/header';
+import Header from '../components/Home/Header';
+import Content from '../components/Home/Content';
+import Footer from '../components/Footer';
 
 export function Home() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
+  );
 }
