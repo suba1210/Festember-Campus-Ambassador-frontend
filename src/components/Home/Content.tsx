@@ -39,7 +39,7 @@ export default function Content() {
         <StyledButton
           variant="contained"
           onClick={() => {
-            navigate('/register');
+            navigate('/fca/register');
           }}
         >
           Register
