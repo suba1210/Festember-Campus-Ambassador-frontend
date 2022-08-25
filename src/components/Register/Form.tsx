@@ -40,7 +40,6 @@ export default function RegisterForm({ handleRegister }: FormProps) {
   const [gender, setGender] = useState<string>(genderList[0]);
   const [yearOfStudy, setYearOfStudy] = useState<string>(yearOfStudyList[0]);
   const [mobileNumber, setMobileNumber] = useState<string>('');
-  const [referralCode, setReferralCode] = useState<string>('');
   const [userInstagramLink, setUserInstagramLink] = useState<string>('');
   const [userTwitterLink, setUserTwitterLink] = useState<string>('');
   const [userFacebookLink, setUserFacebookLink] = useState<string>('');
@@ -260,12 +259,6 @@ export default function RegisterForm({ handleRegister }: FormProps) {
           value={mobileNumber}
           onChange={e => setMobileNumber(e.target.value)}
           isRequired={true}
-        />
-        <InputContainer
-          inputLabel="Referral Code"
-          value={referralCode}
-          onChange={e => setReferralCode(e.target.value)}
-          isRequired={false}
         />
         <div className={styles.socialProfiles}>Social Media Profiles: </div>
         <InputContainer

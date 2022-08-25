@@ -5,12 +5,12 @@ import Register from '../pages/Register';
 
 export const publicRoutes = [
   {
-    url: '/',
+    url: '/fca',
     component: <Home />,
     name: 'HomePage',
   },
   {
-    url: '/register',
+    url: '/fca/register',
     component: <Register />,
     name: 'RegisterPage',
   },
